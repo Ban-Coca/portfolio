@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "motion/react"
+import { BackgroundBeams } from './ui/background-beams'
 
 export default function Hero() {
     const data = {
@@ -13,6 +14,7 @@ export default function Hero() {
             <h1 className="text-4xl text-blue-500 font-bold">{data.title}</h1>
             <p className="text-lg">{data.description}</p>
             <p className="text-sm">{data.subdescription}</p>
+            <BackgroundBeams />
         </div>
     )
 }
