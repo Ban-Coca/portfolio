@@ -35,3 +35,56 @@ export const projects = [
         imagePath: "/placeholder"
     }
 ] 
+
+export const tech = [
+    {
+        id: 1,
+        name: "React",
+        logo: "/react.svg"
+    },
+    {
+        id: 2,
+        name: "Springboot",
+        logo: "/spring.svg"
+    },
+    {
+        id: 3,
+        name: "Django",
+        logo: "/django.svg"
+    },
+    {
+        id: 4,
+        name: "Vite",
+        logo: "/vite.svg"
+    },
+    {
+        id: 5,
+        name: "Javascript",
+        logo: "/javascript.svg"
+    },
+    {
+        id: 6,
+        name: "Tailwind",
+        logo: "/tailwind.svg"
+    },
+    {
+        id: 7,
+        name: "MySQL",
+        logo: "/mysql.svg"
+    },
+    {
+        id: 8,
+        name: "HTML",
+        logo: "/html.svg"
+    },
+    {
+        id: 9,
+        name: "CSS",
+        logo: "/css.svg"
+    },
+    {
+        id: 10,
+        name: "Firebase",
+        logo: "/firebase.svg"
+    }
+]

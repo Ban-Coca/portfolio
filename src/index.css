@@ -6,13 +6,11 @@
 
 :root {
   --background: #2C2A2A;
-  --secondary-background: #D9D9D9;
+  --secondary-background: #706c6e;
   --text: #FFFFFF;
   --font-aeonik-sans: 'Aeonik', sans-serif;
   --font-sofiaPro-sans: 'Sofia Pro', serif;
   font: Arial, Helvetica, sans-serif;
-  overflow: hidden;
-
 }
 
 body {

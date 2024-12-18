@@ -20,6 +20,7 @@ module.exports = {
   		},
   		colors: {
   			background: 'hsl(var(--background))',
+			secondaryBackground: 'var(--secondary-background)',
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
@@ -34,7 +35,7 @@ module.exports = {
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
+  				DEFAULT: 'var(--secondary-background))',
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
   			muted: {
