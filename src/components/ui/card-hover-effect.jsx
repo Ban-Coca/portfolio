@@ -13,12 +13,14 @@ export const HoverEffect = ({
     (<div
       className={cn("grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4  py-10", className)}>
       {items.map((item, idx) => (
-        <Link
+        <a
           href={item.link}
           key={item.link}
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(null)}>
+          onMouseLeave={() => setHoveredIndex(null)}
+          target="_blank"
+          rel="noreferrer">
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
@@ -44,7 +46,7 @@ export const HoverEffect = ({
               <CardDescription>{item.description}</CardDescription>
             </CardContent>
           </Card>
-        </Link>
+        </a>
       ))}
     </div>)
   );

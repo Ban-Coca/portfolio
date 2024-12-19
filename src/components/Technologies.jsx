@@ -4,7 +4,7 @@ import { useRef } from "react"
 import { HoverEffect } from "./ui/card-hover-effect.jsx"
 export default function Technologies(){
     const techs = tech
-    const ref = useRef<HTMLElement>(null)
+    const ref = useRef(null)
     const {scrollYProgress} = useScroll({
         target:ref,
         offset:["start end", "end end"]
@@ -29,10 +29,11 @@ export default function Technologies(){
 
     return(
         <motion.div
+            ref={ref}
             style={{
                 scale: scrollYProgress,
                 opacity: scrollYProgress,
-                height: "calc(100vh)"
+                // height: "calc(100vh)"
 
             }}
             className="flex justify-center items-center h-full flex-col mt-4 mb-2 p-8">
