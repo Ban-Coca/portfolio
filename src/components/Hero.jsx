@@ -16,7 +16,7 @@ export default function Hero() {
             }}
             className="w-full flex justify-center py-20 p-2 mix-blend-difference ">
             <div className='flex flex-col justify-center items-center'>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-blue-500 font-bold">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-blue-500 font-bold">
                     <AnimatedText text={data.title}/>
                 </h1>
                 
