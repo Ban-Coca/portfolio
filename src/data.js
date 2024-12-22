@@ -28,11 +28,11 @@ export const projects = [
     
     {
         id: 4,
-        title: "Sulat",
-        technologies: ["Firebase", "Java", "AndroidStudio", "Material Design"],
-        description: "A note-taking app that allows users to take down notes, set reminders, and view notes.",
+        title: "Chess",
+        technologies: ["Supabase", "Java", "React", "Tailwind", "Shadcn"],
+        description: "A multiplayer chess game.",
         githubLink: "https://github.com/vnBan/Sulat",
-        src: "/image.png"
+        src: "/"
     }
 ] 
 
