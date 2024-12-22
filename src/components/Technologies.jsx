@@ -1,7 +1,8 @@
-import { useScroll, motion } from "motion/react"
+import { useScroll, motion, useInView } from "motion/react"
 import { tech } from "../data.js"
 import { useRef } from "react"
 import { HoverEffect } from "./ui/card-hover-effect.jsx"
+import WordFadeIn from "./ui/word-fade-in.jsx"
 export default function Technologies(){
     const techs = tech
     const ref = useRef(null)
@@ -9,36 +10,31 @@ export default function Technologies(){
         target:ref,
         offset:["start end", "end end"]
     })
-
-    // const MyTech = () => {
-    //     return (
-    //         <div className="flex gap-4 flex-wrap justify-center ">
-    //             {techs.map(({id, name, logo}) =>(
-    //                 <div className="flex w-64 h-24 justify-between items-center bg-secondaryBackground rounded-md p-4" key={id}>
-    //                     <div className=" p-2 roun">
-    //                         <img src={logo} alt={name} className="w-8 h-8"/>
-    //                     </div>
-    //                     <div className="text-xl text-black font-sans">
-    //                         {name}
-    //                     </div>
-    //                 </div>
-    //             ))}
-    //         </div>
-    //     )
-    // }
-
+    const isInView = useInView(ref, {once: false, amount: 0.5})
+    const wordRevealVariants = {
+        initial: {
+          opacity: 0,
+          y: 10,
+        },
+        animate: (index) => ({
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: index * 0.05,
+            duration: 0.5,
+            ease: "easeOut",
+          },
+        }),
+      };      
     return(
         <motion.div
             ref={ref}
-            style={{
-                scale: scrollYProgress,
-                opacity: scrollYProgress,
-                // height: "calc(100vh)"
-
-            }}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            variants={wordRevealVariants}
             className="flex justify-center items-center h-full flex-col mt-4 mb-2 p-8">
-                 <h1 className="font-bold text-5xl my-6 p-6">
-                    Techonologies
+                 <h1 className="font-display text-center text-4xl font-bold tracking-[-0.02em]  drop-shadow-sm dark:text-white md:text-6xl md:leading-[5rem]">
+                    Technologies
                 </h1>
                 {/*<MyTech/> */}
                 <HoverEffect items={techs}/>

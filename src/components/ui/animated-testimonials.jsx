@@ -72,9 +72,9 @@ export const AnimatedTestimonials = ({
                     src={testimonial.src}
                     alt={testimonial.title}
                     width={500}
-                    height={500}
+                    height={500} 
                     draggable={false}
-                    className="h-full w-full rounded-3xl object-cover object-center" />
+                    className="h-full w-full rounded-3xl object-scale-down" />
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -99,13 +99,13 @@ export const AnimatedTestimonials = ({
               duration: 0.2,
               ease: "easeInOut",
             }}>
-            <h3 className="text-2xl font-bold dark:text-white text-black">
+            <h3 className="text-2xl font-bold text-white">
               {testimonials[active].title}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-neutral-500">
+            <a className="text-sm text-gray-500 dark:text-neutral-500" href={testimonials[active].githubLink} target="_blank" rel="noreferrer">
               {testimonials[active].githubLink}
-            </p>
-            <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
+            </a>
+            <motion.p className="text-lg text-neutral-400 mt-8 dark:text-neutral-300">
               {testimonials[active].description.split(" ").map((word, index) => (
                 <motion.span
                   key={index}

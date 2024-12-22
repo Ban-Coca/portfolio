@@ -19,7 +19,7 @@ export default function Navbar() {
     
     const Links = () =>{
         return(
-            <ul className="md:flex gap-x-6 text-sm font-semibold">
+            <ul className="hidden md:flex gap-x-6 text-sm font-semibold relative">
                 {links.map(({id, name, link}) => (
                     <li onClick={()=>lenis.scrollTo(link)} key={id}>
                         <Link href="">
@@ -35,12 +35,12 @@ export default function Navbar() {
     return (
         <div className="w-full h-20 text-white px-5">
             <div className="container mx-auto p-2 h-full">
-                <div className="flex justify-between items-center h-full">
+                <div className="flex justify-between items-center h-full ">
                     <h1 className="font-bold font-sans">
                         VC
                     </h1>
                     <MenuIcon className="md:hidden"/>
-                    <Links/>
+                    <Links />
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ export const projects = [
         technologies: ["React", "TailwindCSS", "Spring Boot", "MySQL", "Postman"],
         description: "A student productivity app that allows users to track tasks, courses, and take down for respective courses.",
         githubLink: "https://github.com/Ban-Coca/CreativeClarity",
-        src: "https://placehold.co/600x400"
+        src: "/CreativeClarity.png"
     },
 
     {
@@ -14,7 +14,7 @@ export const projects = [
         technologies: ["Django", "Javascript", "HTML", "CSS", "SQLite"],
         description: "A project management system that allows users to create, update, delete, and view projects.",
         githubLink: "https://github.com/Ban-Coca/ProjectManagementApp",
-        src: "https://placehold.co/600x400"
+        src: "/ProjectManagement.png"
     },
 
     {
@@ -23,7 +23,7 @@ export const projects = [
         technologies: ["React", "TailwindCSS", "Vite", "Javascript"],
         description: "A personal portfolio website that showcases my projects and skills.",
         githubLink: "https://github.com/Ban-Coca/portfolio",
-        src: "https://placehold.co/600x400"
+        src: "/portfolio.png"
     },
     
     {
@@ -32,7 +32,7 @@ export const projects = [
         technologies: ["Firebase", "Java", "AndroidStudio", "Material Design"],
         description: "A note-taking app that allows users to take down notes, set reminders, and view notes.",
         githubLink: "https://github.com/vnBan/Sulat",
-        src: "https://placehold.co/600x400"
+        src: "/image.png"
     }
 ] 
 
