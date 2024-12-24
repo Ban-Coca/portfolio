@@ -6,8 +6,7 @@ import Technologies from './components/Technologies'
 import Projects from './components/Projects'
 import Lenis from 'lenis'
 import Particles from './components/ui/particles'
-import DotPattern from './components/ui/dot-pattern'
-import { cn } from './lib/utils'
+import Footer from './components/Footer'
 function App() {
   const [color, setColor] = useState("#FFFFFF")
   useEffect(() => {
@@ -22,7 +21,7 @@ function App() {
     <div className='h-full'>
       <Particles
         className='fixed inset-0 w-full h-full'
-        quantity={200}
+        quantity={300}
         ease={80}
         color={color}
         refresh/>
@@ -30,6 +29,7 @@ function App() {
       <Hero />
       <Technologies/>
       <Projects/>
+      <Footer/>
     </div>
   )
 }

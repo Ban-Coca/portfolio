@@ -2,14 +2,9 @@ import { useScroll, motion, useInView } from "motion/react"
 import { tech } from "../data.js"
 import { useRef } from "react"
 import { HoverEffect } from "./ui/card-hover-effect.jsx"
-import WordFadeIn from "./ui/word-fade-in.jsx"
 export default function Technologies(){
     const techs = tech
     const ref = useRef(null)
-    const {scrollYProgress} = useScroll({
-        target:ref,
-        offset:["start end", "end end"]
-    })
     const isInView = useInView(ref, {once: false, amount: 0.5})
     const wordRevealVariants = {
         initial: {
@@ -36,7 +31,6 @@ export default function Technologies(){
                  <h1 className="font-display text-center text-4xl font-bold tracking-[-0.02em]  drop-shadow-sm dark:text-white md:text-6xl md:leading-[5rem]">
                     Technologies
                 </h1>
-                {/*<MyTech/> */}
                 <HoverEffect items={techs}/>
         </motion.div>
     )
