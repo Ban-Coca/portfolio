@@ -1,0 +1,74 @@
+{
+  "tech": [
+    {
+      "id": 1,
+      "name": "React",
+      "logo": "/react.svg",
+      "link": "https://reactjs.org/"
+    },
+    {
+      "id": 2,
+      "name": "Springboot",
+      "logo": "/spring.svg",
+      "link": "https://spring.io/projects/spring-boot"
+    },
+    {
+      "id": 3,
+      "name": "Javascript",
+      "logo": "/javascript.svg",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "id": 4,
+      "name": "Tailwind",
+      "logo": "/tailwind.svg",
+      "link": "https://tailwindcss.com/"
+    },
+    {
+      "id": 5,
+      "name": "Azure",
+      "logo": "/azure.svg",
+      "link": "https://azure.microsoft.com/en-us/"
+    },
+    {
+      "id": 6,
+      "name": "PostgreSQL",
+      "logo": "/postgresql.svg",
+      "link": "https://www.postgresql.org/"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Creative Clarity",
+      "technologies": ["React", "TailwindCSS", "Spring Boot", "MySQL", "Postman"],
+      "description": "A student productivity app that allows users to track tasks, courses, and take down for respective courses.",
+      "githubLink": "https://github.com/Ban-Coca/CreativeClarity",
+      "src": "/CreativeClarity.png"
+    },
+    {
+      "id": 2,
+      "title": "ProjectSync - A Project Management System",
+      "technologies": ["React", "TailwindCSS", "Vite", "Javascript", "Spring Boot"],
+      "description": "A project management system that allows users to create, update, delete, and view projects.",
+      "githubLink": "https://github.com/Ban-Coca/IT342_ProjectSync",
+      "src": "/ProjectSync.png"
+    },
+    {
+      "id": 3,
+      "title": "Gradify",
+      "technologies": ["React", "TailwindCSS", "Vite", "Javascript", "Spring Boot", "Azure", "Postman"],
+      "description": "A grade tracker where teachers link their spreadsheet to keep students up to date of their academic standings",
+      "githubLink": "https://github.com/Ban-Coca/Gradify-Backend",
+      "src": "/Gradify.png"
+    },
+    {
+      "id": 4,
+      "title": "WIP",
+      "technologies": ["React", "TailwindCSS", "Vite", "Javascript", "Spring Boot", "Azure", "Postman"],
+      "description": "COLLABORATIVE PROJECT IN PROGRESS",
+      "githubLink": "/",
+      "src": "/"
+    }
+  ]
+}
