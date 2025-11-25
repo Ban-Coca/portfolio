@@ -58,17 +58,9 @@
       "id": 3,
       "title": "Gradify",
       "technologies": ["React", "TailwindCSS", "Vite", "Javascript", "Spring Boot", "Azure", "Postman"],
-      "description": "A grade tracker where teachers link their spreadsheet to keep students up to date of their academic standings",
+      "description": "Gradify is an innovative web-based academic performance tracking system designed to streamline grade management for teachers and provide students with real-time feedback and insights.",
       "githubLink": "https://github.com/Ban-Coca/Gradify-Backend",
       "src": "/Gradify.png"
-    },
-    {
-      "id": 4,
-      "title": "WIP",
-      "technologies": ["React", "TailwindCSS", "Vite", "Javascript", "Spring Boot", "Azure", "Postman"],
-      "description": "COLLABORATIVE PROJECT IN PROGRESS",
-      "githubLink": "/",
-      "src": "/"
     }
   ]
 }
